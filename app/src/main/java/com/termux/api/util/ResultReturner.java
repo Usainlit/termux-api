@@ -132,7 +132,7 @@ public abstract class ResultReturner {
                             } else {
                                 resultWriter.writeResult(writer);
                             }
-                            if(resultWriter instanceof WithAncillaryFd) {
+                            if (resultWriter instanceof WithAncillaryFd) {
                                 int fd = ((WithAncillaryFd) resultWriter).getFd();
                                 if (fd >= 0) {
                                     pfds[0] = ParcelFileDescriptor.adoptFd(fd);
@@ -143,7 +143,7 @@ public abstract class ResultReturner {
                         }
                     }
                 }
-                if(pfds[0] != null) {
+                if (pfds[0] != null) {
                     pfds[0].close();
                 }
 
