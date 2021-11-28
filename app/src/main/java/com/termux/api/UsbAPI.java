@@ -11,6 +11,7 @@ import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
 import android.os.Looper;
 import android.util.JsonWriter;
+import android.util.Log;
 import android.util.SparseArray;
 
 import com.termux.api.util.ResultReturner;
@@ -24,6 +25,7 @@ import androidx.annotation.NonNull;
 
 public class UsbAPI {
 
+    private static final String LOG_TAG = "TermuxUsbAPI";
     private static SparseArray<UsbDeviceConnection> openDevices = new SparseArray<>();
 
     static void onReceive(final TermuxApiReceiver apiReceiver, final Context context, final Intent intent) {
@@ -133,11 +135,33 @@ public class UsbAPI {
 
     private static UsbDevice getDevice(final TermuxApiReceiver apiReceiver, final Context context, final Intent intent) {
         String deviceName = intent.getStringExtra("device");
+        String vendorId = intent.getStringExtra("vendorId");
+        String productId = intent.getStringExtra("productId");
+        if (deviceName == null && (vendorId == null || productId == null)) {
+            Log.e(LOG_TAG, "Missing usb device info in open()");
+            ResultReturner.returnData(apiReceiver, intent, out -> out.append("Need either usbfs path or vendorId+productId\n"));
+            return null;
+        }
+
         final UsbManager usbManager = (UsbManager) context.getSystemService(Context.USB_SERVICE);
         HashMap<String, UsbDevice> deviceList = usbManager.getDeviceList();
-        UsbDevice device = deviceList.get(deviceName);
+        UsbDevice device = null;
+        if (deviceName != null) {
+            device = deviceList.get(deviceName);
+        } else {
+            for (UsbDevice dev : deviceList.values()) {
+                Log.d(LOG_TAG, "Comparing "+dev.getDeviceName()+" with given vendorId and productId");
+                if (String.format("0x%04x", dev.getVendorId()).equalsIgnoreCase(vendorId) &&
+                    String.format("0x%04x", dev.getProductId()).equalsIgnoreCase(productId)) {
+                    device = dev;
+                    break;
+                }
+            }
+        }
         if (device == null) {
             ResultReturner.returnData(apiReceiver, intent, out -> out.append("No such device\n"));
+        } else {
+            Log.i(LOG_TAG, "Found matching device at "+device.getDeviceName());
         }
         return device;
     }
