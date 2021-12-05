@@ -27,3 +27,259 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+## Transcript
+
+```
+
+Welcome to Termux!
+
+Community forum: https://termux.com/community
+
+Gitter chat:     https://gitter.im/termux/termux
+
+IRC channel:     #termux on libera.chat
+
+Working with packages:
+
+ * Search packages:   pkg search <query>
+
+ * Install a package: pkg install <package>
+
+ * Upgrade packages:  pkg upgrade
+
+Subscribing to additional repositories:
+
+ * Root:     pkg install root-repo
+
+ * Unstable: pkg install unstable-repo
+
+ * X11:      pkg install x11-repo
+
+Report issues at https://termux.com/issues
+
+The Google Play version of the Termux app no longer
+
+receives updates. For more information, visit:
+
+https://wiki.termux.com/wiki/Termux_Google_Play
+
+~ $ https://replit.com/@LuffyMonkyed/Password-generator-READMEmd#main.py
+
+bash: https://replit.com/@LuffyMonkyed/Password-generator-READMEmd#main.py: No such file or directory
+
+~ $
+
+~ $
+
+~ $
+
+~ $
+
+~ $
+
+~ $
+
+~ $
+
+~ $
+
+```
+
+## Termux App Info
+
+**APP_NAME**: `Termux`  
+
+**PACKAGE_NAME**: `com.termux`  
+
+**VERSION_NAME**: `0.117`  
+
+**VERSION_CODE**: `117`  
+
+**TARGET_SDK**: `28`  
+
+**IS_DEBUG_BUILD**: `false`  
+
+**APK_RELEASE**: `F-Droid`  
+
+**SIGNING_CERTIFICATE_SHA256_DIGEST**: `228FB2CFE90831C1499EC3CCAF61E96E8E1CE70766B9474672CE427334D41C42`  
+
+##
+
+## Device Info
+
+### Software
+
+**OS_VERSION**: `3.18.14-15497690`  
+
+**SDK_INT**: `27`  
+
+**RELEASE**: `8.1.0`  
+
+**ID**: `M1AJQ`  
+
+**DISPLAY**: `M1AJQ.T585XXS6CTJ6`  
+
+**INCREMENTAL**: `T585XXS6CTJ6`  
+
+**SECURITY_PATCH**: `2020-04-01`  
+
+**IS_DEBUGGABLE**: `0`  
+
+**IS_TREBLE_ENABLED**: `false`  
+
+**TYPE**: `user`  
+
+**TAGS**: `release-keys`  
+
+### Hardware
+
+**MANUFACTURER**: `samsung`  
+
+**BRAND**: `samsung`  
+
+**MODEL**: `SM-T585`  
+
+**PRODUCT**: `gtaxlltexx`  
+
+**BOARD**: `universal7870`  
+
+**HARDWARE**: `samsungexynos7870`  
+
+**DEVICE**: `gtaxllte`  
+
+**SUPPORTED_ABIS**: `armeabi-v7a, armeabi`  
+
+##
+
+## Termux APT Info
+
+### Subscribed Repositories
+
+#### sources.list
+
+`deb https://packages.termux.org/apt/termux-main/ stable main`
+
+#### game-repo (sources.list.d/game.list)
+
+`deb https://packages.termux.org/apt/termux-games games stable`  
+
+#### science-repo (sources.list.d/science.list)
+
+`deb https://packages.termux.org/apt/termux-science science stable`  
+
+##
+
+### Updatable Packages
+
+```
+
+apt/stable 2.3.13-2 arm [upgradable from: 2.3.6]
+
+bash/stable 5.1.12-2 arm [upgradable from: 5.1.8]
+
+ca-certificates/stable 1:2021-10-26-0 all [upgradable from: 20210525]
+
+command-not-found/stable 1.69 arm [upgradable from: 1.62]
+
+coreutils/stable 9.0 arm [upgradable from: 8.32-7]
+
+curl/stable 7.80.0 arm [upgradable from: 7.77.0-3]
+
+dash/stable 0.5.11.5 arm [upgradable from: 0.5.11.3]
+
+debianutils/stable 5.5 arm [upgradable from: 4.11.2]
+
+dialog/stable 1.3-20210621-1 arm [upgradable from: 1.3-20210530-0]
+
+diffutils/stable 3.8 arm [upgradable from: 3.7-3]
+
+ed/stable 1.17-4 arm [upgradable from: 1.17]
+
+gawk/stable 5.1.1 arm [upgradable from: 5.1.0-1]
+
+gpgv/stable 2.3.3 arm [upgradable from: 2.3.1-1]
+
+grep/stable 3.7-2 arm [upgradable from: 3.6]
+
+gzip/stable 1.11-3 arm [upgradable from: 1.10-4]
+
+inetutils/stable 1.9.4-12 arm [upgradable from: 1.9.4-11]
+
+less/stable 590 arm [upgradable from: 563]
+
+libandroid-support/stable 28-2 arm [upgradable from: 28]
+
+libc++/stable 23b-3 arm [upgradable from: 21d-1]
+
+libcurl/stable 7.80.0 arm [upgradable from: 7.77.0-3]
+
+libgnutls/stable 3.6.16-1 arm [upgradable from: 3.6.15-3]
+
+libgpg-error/stable 1.43 arm [upgradable from: 1.42]
+
+libidn2/stable 2.3.2 arm [upgradable from: 2.3.0-2]
+
+libnettle/stable 3.7.3 arm [upgradable from: 3.7.2]
+
+libnghttp2/stable 1.46.0 arm [upgradable from: 1.43.0]
+
+libssh2/stable 1.10.0 arm [upgradable from: 1.9.0-2]
+
+libtirpc/stable 1.3.2 arm [upgradable from: 1.3.1]
+
+lsof/stable 4.94.0-1 arm [upgradable from: 4.94.0]
+
+nano/stable 5.9 arm [upgradable from: 5.7]
+
+ncurses/stable 6.2.20200725-6 arm [upgradable from: 6.2.20200725-4]
+
+openssl/stable 1.1.1l arm [upgradable from: 1.1.1k-2]
+
+pcre/stable 8.45 arm [upgradable from: 8.44-1]
+
+sed/stable 4.8-2 arm [upgradable from: 4.8-1]
+
+termux-keyring/stable 2.3 all [upgradable from: 1.9]
+
+termux-tools/stable 0.152 all [upgradable from: 0.130]
+
+util-linux/stable 2.37.2 arm [upgradable from: 2.37]
+
+xxhash/stable 0.8.1 arm [upgradable from: 0.8.0-1]
+
+```
+
+
+name: Build
+on: push07-24 23:21:08.732 30341  3161 E termux-api: Error in ResultReturner
+
+07-24 23:21:08.732 30341  3161 E termux-api: java.lang.IllegalArgumentException: Invalid token LIMIT
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:172)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:142)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at android.content.ContentProviderProxy.query(ContentProviderNative.java:472)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at android.content.ContentResolver.query(ContentResolver.java:1183)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at android.content.ContentResolver.query(ContentResolver.java:1115)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at android.content.ContentResolver.query(ContentResolver.java:1071)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at com.termux.api.CallLogAPI.getCallLogs(CallLogAPI.java:39)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at com.termux.api.CallLogAPI.access$000(CallLogAPI.java:21)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at com.termux.api.CallLogAPI$1.writeJson(CallLogAPI.java:29)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at com.termux.api.util.ResultReturner$ResultJsonWriter.writeResult(ResultReturner.java:88)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at com.termux.api.util.ResultReturner.lambda$returnData$0(ResultReturner.java:133)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at com.termux.api.util.-$$Lambda$ResultReturner$oCU8JqHW5HLMrNZa40ThjAWcwzo.run(Unknown Source:8)
+
+07-24 23:21:08.732 30341  3161 E termux-api:    at java.lang.Thread.run(Thread.java:923)
+jobs:  build:    runs-on: ubuntu-latest    steps:    - name: Clone repository      uses: actions/checkout@v2    - name: Build      run: |        ./gradlew assembleDebug    - name: Store generated APK file      uses: actions/upload-artifact@v2      with:        name: termux-api        path: ./app/build/outputs
+##
+
